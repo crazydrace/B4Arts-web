@@ -83,18 +83,21 @@ const Contact = () => {
     setStatus("sending");
 
     try {
-      const response = await fetch("http://localhost:3000/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        }),
-      });
+      const response = await fetch(
+        "https://b4arts-web.onrender.com/api/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          }),
+        }
+      );
 
       const result = await response.json();
 
