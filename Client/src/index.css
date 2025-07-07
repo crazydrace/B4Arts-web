@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Import Font First */
+@font-face {
+  font-family: "querencia";
+  src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "querencia", sans-serif;
+}
+.font-querencia {
+  font-family: "querencia", sans-serif;
+}
