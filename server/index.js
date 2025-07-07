@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 import contactRoute from "./routes/contact.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 
 app.use(cors());
 
