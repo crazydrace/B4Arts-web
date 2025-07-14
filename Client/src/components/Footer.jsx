@@ -10,10 +10,26 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <FaInstagram />, name: "Instagram", url: "#" },
-    { icon: <FaTwitter />, name: "Twitter", url: "#" },
-    { icon: <FaDribbble />, name: "Dribbble", url: "#" },
-    { icon: <FaBehance />, name: "Behance", url: "#" },
+    {
+      icon: <FaInstagram />,
+      name: "Instagram",
+      url: "https://www.instagram.com/bishhr_manjeri",
+    },
+    {
+      icon: <FaTwitter />,
+      name: "Twitter",
+      url: "https://www.linkedin.com/in/bishr-muhammad-4b2591374/",
+    },
+    {
+      icon: <FaDribbble />,
+      name: "Dribbble",
+      url: "https://dribbble.com/bishr-muhammad",
+    },
+    {
+      icon: <FaBehance />,
+      name: "Behance",
+      url: "https://www.behance.net/bishrmuhammad",
+    },
   ];
 
   const quickLinks = [
@@ -94,14 +110,14 @@ const Footer = () => {
               Contact
             </h3>
             <address className="not-italic text-sm text-gray-300 space-y-3">
-              <p>B4ARTS</p>
+              <p>ART BY BISHR</p>
               <p>Malappuram, Kerala, India</p>
               <p>
                 <a
                   href="mailto:contact@bishr.art"
                   className="hover:text-white transition-colors"
                 >
-                  contact@bishr.art
+                  bishrmuhammad564@gmail.com
                 </a>
               </p>
               <p>
@@ -109,7 +125,7 @@ const Footer = () => {
                   href="tel:+971501234567"
                   className="hover:text-white transition-colors"
                 >
-                  +900 00 000 000
+                  +91 8891 845 261
                 </a>
               </p>
             </address>

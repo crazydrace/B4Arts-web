@@ -86,14 +86,23 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              {["Instagram", "Behance", "Artsy"].map((platform) => (
+              {[
+                {
+                  name: "Instagram",
+                  href: "https://www.instagram.com/bishhr_manjeri",
+                },
+                {
+                  name: "Behance",
+                  href: "https://www.behance.net/bishrmuhammad",
+                },
+              ].map(({ name, href }) => (
                 <motion.a
-                  key={platform}
-                  href="#"
+                  key={name}
+                  href={href}
                   whileHover={{ y: -3 }}
                   className="text-gray-400 hover:text-[#FFD2DC] transition-colors duration-300 text-sm tracking-wide"
                 >
-                  {platform}
+                  {name}
                 </motion.a>
               ))}
             </motion.div>

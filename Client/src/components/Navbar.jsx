@@ -35,7 +35,7 @@ const Navbar = ({ onNavigate }) => {
             to="/"
             className="text-2xl font-bold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#FFD2DC] to-[#CF0F47]"
           >
-            BISHR
+            ART BY BISHR
           </Link>
         </motion.div>
 
