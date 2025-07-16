@@ -8,7 +8,7 @@ import {
   FiCheck,
   FiAlertCircle,
 } from "react-icons/fi";
-import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaBehance } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,27 +27,39 @@ const Contact = () => {
     {
       icon: <FiMail size={24} className="text-[#CF0F47]" />,
       title: "Email",
-      value: "contact@bishr.art",
+      value: "bishrmuhammad564@gmail.com",
       action: "mailto:contact@bishr.art",
     },
     {
       icon: <FiPhone size={24} className="text-[#CF0F47]" />,
       title: "Phone",
-      value: "+971 50 123 4567",
-      action: "tel:+971501234567",
+      value: "+91 8891 845 261",
+      action: "tel:+918891845261",
     },
     {
       icon: <FiMapPin size={24} className="text-[#CF0F47]" />,
       title: "Studio",
-      value: "B4ARTS, Malappuram, Kerala, India",
+      value: "ART BY BISHR, Manjeri, Malappuram, Kerala, India",
       action: "https://maps.google.com",
     },
   ];
 
   const socialLinks = [
-    { icon: <FaInstagram size={20} />, name: "Instagram", url: "#" },
-    { icon: <FaTwitter size={20} />, name: "Twitter", url: "#" },
-    { icon: <FaLinkedin size={20} />, name: "LinkedIn", url: "#" },
+    {
+      icon: <FaInstagram size={20} />,
+      name: "Instagram",
+      url: "https://www.instagram.com/bishhr_manjeri",
+    },
+    {
+      icon: <FaBehance />,
+      name: "Behance",
+      url: "https://www.behance.net/bishrmuhammad",
+    },
+    {
+      icon: <FaLinkedin size={20} />,
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/bishr-muhammad-4b2591374/",
+    },
   ];
 
   const validateForm = () => {
@@ -389,17 +401,17 @@ const Contact = () => {
                   {
                     question: "What is your pricing structure?",
                     answer:
-                      "Pricing varies based on size, medium, and complexity. Small works start at $500, while larger commissions typically range from $2,000 to $10,000.",
+                      "Pricing varies based on size, medium, and complexity. Small works start at Indian rupee  Symbol ₹500.",
                   },
                   {
-                    question: "Do you ship internationally?",
+                    question: "Do you ship nationally?",
                     answer:
-                      "Yes, I ship worldwide with professional art handlers. Shipping costs are calculated based on destination and artwork size.",
+                      "Yes, I ship nationwide with professional art handlers. Shipping costs are calculated based on destination and artwork size.",
                   },
                   {
                     question: "What is your turnaround time?",
                     answer:
-                      "Turnaround time depends on my current commission queue and the complexity of the piece. Typically 4-8 weeks for most works.",
+                      "Turnaround time depends on my current commission queue and the complexity of the piece. Typically 2-3 weeks for most works.",
                   },
                 ].map((item, index) => (
                   <div

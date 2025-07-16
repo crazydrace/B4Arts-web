@@ -1,7 +1,19 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import toast from "react-hot-toast";
-
+import image1 from "/image/1.jpg";
+import image2 from "/image/2.jpg";
+import image3 from "/image/3.jpg";
+import image5 from "/image/5.jpg";
+import image7 from "/image/7.jpg";
+import image8 from "/image/8.jpg";
+import image9 from "/image/9.jpg";
+import image10 from "/image/10.jpg";
+import image11 from "/image/11.jpg";
+import image12 from "/image/12.jpg";
+import image13 from "/image/13.jpg";
+import image14 from "/image/14.jpg";
+import image15 from "/image/15.jpg";
 import {
   FiSearch,
   FiX,
@@ -23,7 +35,7 @@ const categories = [
 
 const imagesData = [
   {
-    src: "/art1.jpg",
+    src: image1,
     title: "Reflection",
     year: 2023,
     medium: "Oil on Canvas",
@@ -31,38 +43,97 @@ const imagesData = [
     category: "Abstract",
   },
   {
-    src: "/art2.jpg",
+    src: image2,
+    year: 2023,
     title: "Contrast",
     medium: "Acrylic and Ink",
     dimensions: "90 × 60 cm",
     category: "Mixed Media",
   },
   {
-    src: "/art3.jpg",
+    src: image3,
     title: "Emotion",
     year: 2023,
     medium: "Digital Art",
     dimensions: "Print on Demand",
     category: "Digital",
   },
+
   {
-    src: "/art4.jpg",
-    title: "Silhouette",
-    year: 2021,
-    medium: "Watercolor",
-    dimensions: "50 × 70 cm",
-    category: "Portraits",
-  },
-  {
-    src: "/art5.jpg",
+    src: image5,
     title: "Horizon",
     year: 2020,
     medium: "Oil on Canvas",
     dimensions: "100 × 150 cm",
     category: "Landscapes",
   },
+
   {
-    src: "/art6.jpg",
+    src: image7,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image8,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image9,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image10,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image11,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image12,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image13,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image14,
+    title: "Fragments",
+    year: 2023,
+    medium: "Mixed Media",
+    dimensions: "80 × 80 cm",
+    category: "Abstract",
+  },
+  {
+    src: image15,
     title: "Fragments",
     year: 2023,
     medium: "Mixed Media",
@@ -170,7 +241,7 @@ const Gallery = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FFD2DC] to-[#CF0F47]">
-            Bishr's Gallery
+            Bishr's Art Works
           </h1>
           <div className="w-24 h-1 bg-[#CF0F47] mx-auto mb-6"></div>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
@@ -264,14 +335,7 @@ const Gallery = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-zoom-in"
                   onClick={() => openLightbox(img)}
                 />
-                <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button
-                    className="p-2 bg-black/70 rounded-full hover:bg-[#670D2F] transition-colors"
-                    onClick={() => handleShare(selectedImage)}
-                  >
-                    <FaShare className="text-white" />
-                  </button>
-                </div>
+                <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
 
               <div className="p-4">

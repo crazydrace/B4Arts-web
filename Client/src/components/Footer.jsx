@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import {
   FaInstagram,
-  FaTwitter,
+  FaLinkedin,
   FaDribbble,
   FaBehance,
   FaHeart,
@@ -16,7 +16,7 @@ const Footer = () => {
       url: "https://www.instagram.com/bishhr_manjeri",
     },
     {
-      icon: <FaTwitter />,
+      icon: <FaLinkedin />,
       name: "Twitter",
       url: "https://www.linkedin.com/in/bishr-muhammad-4b2591374/",
     },

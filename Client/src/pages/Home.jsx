@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bishr from "../assets/image/bishr.jpg";
+import bishr from "../assets/image/logo.jpg";
 
 const Home = () => {
   return (
@@ -58,7 +58,7 @@ const Home = () => {
               transition={{ delay: 0.6 }}
             >
               <motion.a
-                href="#gallery"
+                href="/gallery"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 10px 25px -5px rgba(207, 15, 71, 0.4)",
@@ -73,7 +73,7 @@ const Home = () => {
                 href="/about"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-block border-2 border-[#CF0F47] text-[#CF0F47] px-8 py-4 rounded-full transition-all duration-300 font-medium text-lg"
+                className="inline-block border-2  before:-z-10 relative lg:before:h-16  lg:before:w-43 before:top-0 before:right-43 overflow-hidden hover:before:right-0  before:duration-600 hover:text-white before:bg-[#CF0F47] before:absolute border-[#CF0F47] text-[#CF0F47] px-8 py-4 rounded-full transition-all duration-300 font-medium text-lg"
               >
                 Artist's Story
               </motion.a>
@@ -135,9 +135,9 @@ const Home = () => {
 
             {/* Artist Image */}
             <div className="relative group">
-              <div className="absolute inset-0 bg-[#CF0F47] rounded-full blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-tl from-[#CF0F47] via-purple-600 to-fuchsia-500 animate-spin rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
               <motion.img
-                src={""}
+                src={bishr}
                 alt="Bishr - Artist"
                 className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full shadow-2xl relative z-10 border-4 border-white/20 group-hover:border-[#FFD2DC]/30 transition-all duration-500"
                 whileHover={{ scale: 1.02 }}

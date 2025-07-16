@@ -4,17 +4,18 @@ import {
   FaAward,
   FaRegCalendarAlt,
   FaInstagram,
-  FaArtstation,
+  FaTwitter,
 } from "react-icons/fa";
 import { useState } from "react";
+import bishr from "../assets/image/about.jpg"; // Ensure this path is correct
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("bio");
 
   const achievements = [
     {
-      year: "2023",
-      title: "Emerging Artist Award",
+      year: "2015",
+      title: "Journey of Colors",
       description: "Recognized by lorem Art Foundation",
     },
     {
@@ -31,14 +32,9 @@ const About = () => {
 
   const education = [
     {
-      year: "2015-2018",
-      institution: "Example University",
-      degree: "BFA in Visual Arts",
-    },
-    {
-      year: "2018",
-      institution: "Example Academy of Art",
-      degree: "Summer Intensive Program",
+      year: "2019 - On going",
+      institution: "Darul Huda University",
+      degree: "Hudawi",
     },
   ];
 
@@ -76,7 +72,7 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-[#CF0F47] to-[#670D2F] rounded-xl opacity-70 blur-xl -z-10"></div>
             <div className="relative overflow-hidden rounded-xl h-full min-h-[400px]">
               <img
-                src="/artist-portrait.jpg"
+                src={bishr}
                 alt="Bishr in his studio"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -89,10 +85,10 @@ const About = () => {
                     <FaInstagram size={24} />
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/MuhammadBi29996"
                     className="text-gray-300 hover:text-[#FFD2DC] transition-colors"
                   >
-                    <FaArtstation size={24} />
+                    <FaTwitter size={24} />
                   </a>
                 </div>
               </div>
@@ -144,17 +140,23 @@ const About = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe accusantium perspiciatis deleniti libero omnis
-                    voluptates, qui unde recusandae rem sit? Explicabo,
-                    repellat. Voluptates qui nihil magnam doloremque harum unde
-                    beatae?
+                    My name is Bishr Muhammed, and I am a freelance portrait
+                    artist born on September 29, 2007, in Manjeri, Malappuram,
+                    Kerala. From a young age, I developed a strong passion for
+                    art, particularly in capturing the emotions and expressions
+                    of people through portraiture. I currently work
+                    independently, creating detailed and expressive portraits
+                    for a variety of clients. Through my artwork, I aim to
+                    reveal the unique personality and story behind each face I
+                    draw. I am constantly improving my skills and look forward
+                    to expanding my reach and sharing my art with a broader
+                    audience.
                   </p>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nisi labore molestias, facilis sed recusandae iste maxime a
-                    nihil sunt nostrum vero dolore nobis ratione blanditiis.
-                    Ipsa accusantium doloremque iste facere?
+                    From the quiet town of Manjeri, I turned scribbles into a
+                    voice of my own. Freelancing gave me freedom — not just to
+                    earn, but to evolve. Each portrait I create is part
+                    reflection, part rebellion.
                   </p>
                   <div className="bg-[#1a0a12] p-6 rounded-xl border border-[#670D2F]/50">
                     <div className="flex items-start">
