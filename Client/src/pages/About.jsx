@@ -12,23 +12,23 @@ import bishr from "../assets/image/about.jpg"; // Ensure this path is correct
 const About = () => {
   const [activeTab, setActiveTab] = useState("bio");
 
-  const achievements = [
-    {
-      year: "2015",
-      title: "Journey of Colors",
-      description: "Recognized by lorem Art Foundation",
-    },
-    {
-      year: "2021",
-      title: "Contemporary Art Prize",
-      description: "Kerala Art Exhibition",
-    },
-    {
-      year: "2019",
-      title: "First Solo Exhibition",
-      description: "Emotions in Color at ArtHub Malappuram",
-    },
-  ];
+  // const achievements = [
+  //   {
+  //     year: "2015",
+  //     title: "Journey of Colors",
+  //     description: "Recognized by lorem Art Foundation",
+  //   },
+  //   {
+  //     year: "2021",
+  //     title: "Contemporary Art Prize",
+  //     description: "Kerala Art Exhibition",
+  //   },
+  //   {
+  //     year: "2019",
+  //     title: "First Solo Exhibition",
+  //     description: "Emotions in Color at ArtHub Malappuram",
+  //   },
+  // ];
 
   const education = [
     {
@@ -109,7 +109,7 @@ const About = () => {
               >
                 Biography
               </button>
-              <button
+              {/* <button
                 onClick={() => setActiveTab("achievements")}
                 className={`px-4 py-2 font-medium ${
                   activeTab === "achievements"
@@ -118,7 +118,7 @@ const About = () => {
                 }`}
               >
                 Achievements
-              </button>
+              </button> */}
               <button
                 onClick={() => setActiveTab("education")}
                 className={`px-4 py-2 font-medium ${
@@ -181,7 +181,7 @@ const About = () => {
                 </motion.div>
               )}
 
-              {activeTab === "achievements" && (
+              {/* {activeTab === "achievements" && (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -217,7 +217,7 @@ const About = () => {
                     </motion.div>
                   ))}
                 </motion.div>
-              )}
+              )} */}
 
               {activeTab === "education" && (
                 <motion.div
@@ -290,11 +290,11 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                title: "Example Art",
-                description: "Mixed media series exploring cityscapes",
+                title: "Horizon",
+                description: "Mixed media series.",
               },
               {
-                title: "Example Portraits",
+                title: "Together",
                 description: "Portrait collection capturing unspoken emotions",
               },
             ].map((project, index) => (

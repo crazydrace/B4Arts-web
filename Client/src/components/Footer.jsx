@@ -49,7 +49,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="bg-gradient-to-b from-[#1a0a12] to-[#3C0D25] text-white pt-16 pb-8 px-6 md:px-16"
+      className="bg-gradient-to-b  from-[#1a0a12] to-[#3C0D25] text-white pt-16 pb-8 px-6 md:px-16"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
