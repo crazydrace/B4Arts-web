@@ -4,8 +4,12 @@ import {
   FaLinkedin,
   FaDribbble,
   FaBehance,
-  FaHeart,
+  FaHome,
 } from "react-icons/fa";
+import { SiAboutdotme } from "react-icons/si";
+import { RiGalleryFill } from "react-icons/ri";
+
+import { MdContacts } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -33,10 +37,14 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Home", url: "/" },
-    { name: "About", url: "/about" },
-    { name: "Gallery", url: "/gallery" },
-    { name: "Contact", url: "/contact" },
+    {
+      icon: <FaHome />,
+      name: "Home",
+      url: "/",
+    },
+    { icon: <SiAboutdotme />, name: "About", url: "/about" },
+    { icon: <RiGalleryFill />, name: "Gallery", url: "/gallery" },
+    { icon: <MdContacts />, name: "Contact", url: "/contact" },
   ];
 
   return (
@@ -89,9 +97,9 @@ const Footer = () => {
                 >
                   <a
                     href={link.url}
-                    className="text-sm text-gray-300 hover:text-white transition-colors duration-300 flex items-center"
+                    className="text-sm text-gray-300 gap-2  hover:text-white transition-colors duration-300 flex items-center"
                   >
-                    <span className="w-2 h-2 bg-[#CF0F47] rounded-full mr-3"></span>
+                    {link.icon}
                     {link.name}
                   </a>
                 </motion.li>
